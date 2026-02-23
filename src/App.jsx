@@ -28,7 +28,7 @@ export default function App() {
       "id": "z8x2c4d",
       "branch": "feature-1",
       "parents": ["e5f6g7h"], 
-      "title": "Another commit",
+      "title": "Another commitAnother commit",
       "description": "This is the commit of the project.",
       "author": "Jane Smith",
       "date": "2025-06-01T12:00:00Z"
@@ -86,6 +86,7 @@ export default function App() {
       name: "Repo 3",
     }
   ];
+  
   return (
     <div className="w-full h-[100vh] bg-black relative">
       <Login />

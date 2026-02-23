@@ -61,7 +61,7 @@ export default function History({ data, onSelectCommit }) {
                     fontWeight="500"
                     dominantBaseline="middle"
                   >
-                    {commitData.title}
+                    {commitData.title.length > 25 ? commitData.title.substring(0, 25) + "..." : commitData.title}
                   </text>
 
                   <g transform="translate(0, 15)">
