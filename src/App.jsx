@@ -12,9 +12,48 @@ export default function App() {
   "branches": [
     { "name": "main", "base": null },
     { "name": "feature-1", "base": "main" },
-    { "name": "feature-2", "base": "main" }
+    { "name": "feature-2", "base": "main" },
+    { "name": "feature-3", "base": "main" },
+    { "name": "feature-4", "base": "main" },
+    { "name": "feature-5", "base": "feature-4" }
   ],
   "commits": [
+    {
+      "id": "a1b5cd",
+      "branch": "main",
+      "parents": [], 
+      "title": "Initial commit",
+      "description": "This is the initial commit of the project.",
+      "author": "John Doe",
+      "date": "2024-06-01T12:00:00Z"
+    },
+    {
+      "id": "q5zpriu",
+      "branch": "feature-5",
+      "parents": ["x7zpoiu"], 
+      "title": "Initial commit",
+      "description": "This is the initial commit of the project.",
+      "author": "John Doe",
+      "date": "2024-06-01T12:00:00Z"
+    },
+    {
+      "id": "x7zpoiu",
+      "branch": "feature-4",
+      "parents": ["i9j0k1l"], 
+      "title": "New branchhh",
+      "description": "Description of the commit.",
+      "author": "Jane Smith",
+      "date": "2025-09-01T12:00:00Z"
+    },
+    {
+      "id": "y7ppclu",
+      "branch": "feature-3",
+      "parents": ["a1b5cd"], 
+      "title": "New branch",
+      "description": "Description of the commit.",
+      "author": "John Doe",
+      "date": "2025-09-01T12:00:00Z"
+    },
     {
       "id": "p7h2c6u",
       "branch": "main",
@@ -59,15 +98,6 @@ export default function App() {
       "description": "Implemented the second feature of the project.",
       "author": "Alice Johnson",
       "date": "2024-06-03T10:45:00Z"
-    },
-    {
-      "id": "a1b5cd",
-      "branch": "main",
-      "parents": [], 
-      "title": "Initial commit",
-      "description": "This is the initial commit of the project.",
-      "author": "John Doe",
-      "date": "2024-06-01T12:00:00Z"
     }
   ]
   }

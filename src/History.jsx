@@ -3,7 +3,7 @@ import { Gitgraph, templateExtend, TemplateName } from "@gitgraph/react";
 export default function History({ data, onSelectCommit }) {
   const gitgraphOptions = {
     template: templateExtend(TemplateName.Metro, {
-      colors: ["#FF5F5F", "#BE50F4", "#3DD6AF"],
+      colors: ["#FF5F5F", "#BE50F4", "#3DD6AF", "#F4B942", "#5A9CFF", "#DD7B97"],
       branch: {
         lineWidth: 2,
         spacing: 30,
@@ -22,7 +22,7 @@ export default function History({ data, onSelectCommit }) {
   };
 
   return (
-    <div className="w-full h-auto bg-black px-2 py-5 overflow-hidden">
+    <div className="w-full h-auto bg-black px-2 py-5 overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       <Gitgraph options={gitgraphOptions}>
         {(gitgraph) => {
           const activeBranches = {};
