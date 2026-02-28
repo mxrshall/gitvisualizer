@@ -22,7 +22,7 @@ export default function History({ data, onSelectCommit }) {
   };
 
   return (
-    <div className="w-full h-auto bg-black px-2 py-5 overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+    <div className="w-full h-auto bg-black px-2 py-5 overflow-x-auto whitespace-nowrap">
       <Gitgraph options={gitgraphOptions}>
         {(gitgraph) => {
           const activeBranches = {};

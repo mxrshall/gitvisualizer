@@ -4,6 +4,7 @@ import Branches from "./Branches";
 import History from "./History";
 import CommitInfo from "./CommitInfo";
 import Login from "./Login";
+import Notification from "./Notification";
 
 export default function App() {
   const [selectedCommit, setSelectedCommit] = useState(null);
@@ -120,6 +121,7 @@ export default function App() {
   return (
     <div className="w-full h-[100vh] bg-black relative">
       <Login />
+      <Notification />
       <Navbar repos={repos} />
       <div className="w-full flex flex-col">
         <Branches data={data} />
